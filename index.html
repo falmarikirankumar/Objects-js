@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Array</title>
+  </head>
+  <body>
+    <h1 align="center">
+      JavaScript Questions
+      <br />
+      Objects
+    </h1>
+    <div class="box">
+      <h2>1. Create a Function.</h2>
+      <pre>
+    function Check(obj1){
+      obj1.setter=function(){
+        console.log(obj1.name)
+      }
+    }</pre
+      >
+    </div>
+    <div class="box">
+      <h2>2. Delete a Parameter.</h2>
+      <pre>
+    function Check(obj1) {
+        return delete obj1.rollno;
+    }</pre
+      >
+    </div>
+    <div class="box">
+      <h2>3. Check whether the Package is Dream Package or not.</h2>
+      <pre>
+    function Check(obj1) {
+        if(obj1.salary >= 500000){
+          return "Dream"
+        }
+        else{
+          return "NotDream"
+        }
+    }</pre
+      >
+    </div>
+    <div class="box">
+      <h2>4. Check whether the Object has a parameter or not.</h2>
+      <pre>
+    function Check(obj1) {
+      var count = 0
+      for(let key in obj1){
+        count+=1
+      }
+      if(count===0){
+        return "false"
+      }
+      return "true"
+    }</pre
+      >
+    </div>
+    <div class="box">
+      <h2>5. Merge the Objects.</h2>
+      <pre>
+    function Check(obj1,obj2) {
+        var obj = Object.assign(obj1,obj2);
+        return obj;
+    }</pre
+      >
+    </div>
+    <div class="box">
+      <h2>6. Object Multiplyer.</h2>
+      <pre>
+    function Check(a,obj1) {
+    obj1.id=(obj1.id*a);
+    obj1.houseno=(obj1.houseno*a);
+    return obj1;
+    } </pre
+      >
+    </div>
+    <div class="box">
+      <h2>7. Find the sum of Object Members.</h2>
+      <pre>
+    function Check(obj1) {
+      var sum=0
+        for(let i in obj1){
+          if(typeof(obj1[i])=="number"){
+            sum +=obj1[i]
+          }
+        }
+        return sum
+    } </pre
+      >
+    </div>
+    <div class="box">
+      <h2>8. Check whether the Objects are same or not..</h2>
+      <pre>
+    function check(obj1,a,b) {
+        for(let i in obj1){
+          if((obj1.name===a)&& obj1.id===b){
+            return "true";
+            }else{
+                    return"false";
+            }
+        }
+    } </pre
+      >
+    </div>
+  </body>
+</html>
